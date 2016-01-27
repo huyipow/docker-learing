@@ -4,7 +4,7 @@
 #
 # Dockerizing Mariadb: Dockerfile for building Mariadb images
 #
-FROM csphere/centos:7.1
+FROM csphere/centos:7.2
 MAINTAINER Carson,C.J.Zeong <zcy@nicescale.com>
 
 ENV DATA_DIR /var/lib/mysql

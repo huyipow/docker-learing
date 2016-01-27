@@ -4,16 +4,17 @@
 #
 # Dockerizing php-fpm: Dockerfile for building php-fpm images
 #
-FROM       csphere/centos:7.1
+FROM       csphere/centos:7.2
 MAINTAINER Carson,C.J.Zeong <zcy@nicescale.com>
 
 # Set environment variable
 ENV	APP_DIR /app
 
-RUN	yum -y install nginx php-cli php-mysql php-pear php-ldap php-mbstring php-soap php-dom php-gd php-xmlrpc php-fpm php-mcrypt && \ 
+#RUN	yum -y install nginx php-cli php-mysql php-pear php-ldap php-mbstring php-soap php-dom php-gd php-xmlrpc php-fpm php-mcrypt && \ 
+#	yum clean all
+RUN	yum -y install nginx php-pdo php-recode  php-php-gettext php-pecl-memcached php-pecl-memcache php-fpm php-tidy php-common php-pearphp php-pecl-imagick php-intl php-xml php-pecl-redis php-mysql php-pecl-xhprof php-pecl-xdebug php-imap php-xmlrpc php-dba php-gd php-mcrypt php-cli php-pecl-igbinary php-mbstring php-devel php-odbc php-pecl-apc php-bcmath php-snmp && \
 	yum clean all
-
-ADD nginx_nginx.conf /etc/nginx/nginx.conf
+ADD 	nginx_nginx.conf /etc/nginx/nginx.conf
 ADD	nginx_default.conf /etc/nginx/conf.d/default.conf
 
 ADD	php_www.conf /etc/php-fpm.d/www.conf
