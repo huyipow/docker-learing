@@ -15,7 +15,7 @@ ENV MAVEN_HOME /opt/maven
 
 COPY apache-maven-3.3.3-bin.tar.gz /opt/
 
-RUN tar xzf /opt/apache-maven-3.3.3-bin.tar.gz -C /opt && \
+RUN tar xzf /opt/apache-maven-3.3.9-bin.tar.gz -C /opt && \
     mv /opt/apache-maven-${MAVEN_VERSION} /opt/maven  && \
     ln -s /opt/maven/bin/mvn /usr/bin/mvn
 
