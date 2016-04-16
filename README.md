@@ -1,4 +1,4 @@
-# cSphere Docker 实训课程
+# CSPHERE Docker 实训课程
 
 ## 课程安排
 - 第一讲 Docker 实战之入门以及 Dockerfile
