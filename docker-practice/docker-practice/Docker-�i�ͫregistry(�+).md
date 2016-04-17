@@ -1,4 +1,4 @@
-本期课程: Docker实战之Registry以及持续集成
+本期课程: Docker实战之Registry以及持续集成 
 
 上一讲<视频>我们知道了Docker的基础知识，以及学会了Dockerfile，第二讲将结合一个实际的Java应用，演示如何通过Docker以及Registry
 
